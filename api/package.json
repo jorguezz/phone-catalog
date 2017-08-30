@@ -1,0 +1,15 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Phones api server",
+  "main": "index.js",
+  "author": "yonathan rodriguez",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "hapi": "^16.5.2",
+    "nodemon": "^1.11.0"
+  }
+}
