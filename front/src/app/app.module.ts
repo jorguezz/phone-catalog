@@ -3,9 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+
+// Pipes
+import { PriceFormatterPipe } from './pipes/priceFormat.pipe';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PriceFormatterPipe
   ],
   imports: [
     BrowserModule
