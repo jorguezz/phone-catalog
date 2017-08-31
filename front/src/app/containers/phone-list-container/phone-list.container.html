@@ -1,0 +1,16 @@
+<section class="products_container">
+
+  <!-- Placeholder tpl on loading-->
+  <ul *ngIf="!devices.length" class="row product_list">
+    <phones-placeholder></phones-placeholder>
+  </ul>
+
+  <ul *ngIf="devices.length" class="row product_list">
+    <li *ngFor="let device of devices" class="col-md-4">
+
+      <phone-detail [device]="device"></phone-detail>
+
+    </li>
+  </ul>
+
+</section>
