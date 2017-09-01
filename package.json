@@ -3,12 +3,9 @@
 	"name": "phone-catalog",
 	"version": "0.0.1",
 	"scripts": {
+		"postinstall": "lerna bootstrap -i --stream",
 		"start": "lerna run start --stream"
 	},
-	"workspaces": [
-		"api",
-		"front"
-	],
 	"dependencies": {
 		"lerna": "^2.1.2"
 	}
