@@ -7,13 +7,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PhoneDetailComponent implements OnInit {
 
-  @Input() private device: Object;
+  @Input() private phone: Object;
 
   constructor () {}
 
   ngOnInit() {}
 
-  private addToCart(ev, device) {
-    console.log(device);
+  private addToCart(ev, phone) {
+    console.log(phone);
   }
 }

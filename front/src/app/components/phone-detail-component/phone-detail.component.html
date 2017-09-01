@@ -1,11 +1,11 @@
 <div class="product_img">
-  <img *ngIf="device.image" width="280" height="380" src="{{device.image}}" alt="smartphone">
+  <img *ngIf="phone.image" width="280" height="380" src="{{phone.image}}" alt="smartphone">
 </div>
 <div class="product_info">
-  <p class="title">{{device.name}} {{device.color}}</p>
-  <p class="subtitle">{{device.description}}</p>
-  <p class="price">{{device.price | priceFormat }}</p>
+  <p class="title">{{phone.name}} {{phone.color}}</p>
+  <p class="subtitle">{{phone.description}}</p>
+  <p class="price">{{phone.price | priceFormat }}</p>
   <div class="btn-actions">
-    <a role="button" class="btn btn-default add_to_cart" (click)="addToCart($event, device)">Add to Cart</a>
+    <a role="button" class="btn btn-default add_to_cart" (click)="addToCart($event, phone)">Add to Cart</a>
   </div>
 </div>

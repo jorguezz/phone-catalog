@@ -9,7 +9,7 @@
 
 <div class="container">
 
-  <phone-list [devices]="devices"></phone-list>
+  <phone-list></phone-list>
 
   <hr>
 
@@ -19,4 +19,4 @@
 
 </div> <!-- /container -->
 
-<app-spinner *ngIf="!devices.length"></app-spinner>
+<app-spinner *ngIf="isLoading"></app-spinner>
