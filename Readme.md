@@ -6,9 +6,9 @@
 ```bash
 yarn install
 yarn run start
-
-Open http://localhost:4200
 ```
+[Open: http://localhost:4200/](http://localhost:4200/)
+
 
 ## Docker installation
 
