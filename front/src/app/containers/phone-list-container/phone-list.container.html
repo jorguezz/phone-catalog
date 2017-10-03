@@ -1,15 +1,12 @@
+<ng-template #loading>
+  <phones-placeholder></phones-placeholder>
+</ng-template>
+
 <section class="products_container">
 
-  <!-- Placeholder tpl on loading-->
-  <ul *ngIf="!phones.length" class="row product_list">
-    <phones-placeholder></phones-placeholder>
-  </ul>
-
-  <ul *ngIf="phones.length" class="row product_list">
+  <ul *ngIf="phones.length else loading" class="row product_list">
     <li *ngFor="let phone of phones" class="col-md-4">
-
       <phone-detail [phone]="phone"></phone-detail>
-
     </li>
   </ul>
 
