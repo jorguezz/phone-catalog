@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { PhoneService } from '../../services/phone.service';
 import { LoadingService } from '../../services/loading.service';
 import { PhonesState } from '../../store/state';
 import { PhonesActions } from '../../store/actions';
@@ -14,12 +13,11 @@ import { Observable } from 'rxjs/Observable';
 })
 export class PhoneListContainer implements OnInit{
 
-  private phones = [];
-  private phones$: Observable<any>;
+  phones = [];
+  phones$: Observable<any>;
 
   constructor (
     private store: Store<any>,
-    private phoneService: PhoneService,
     private loadingService: LoadingService) {
   }
 
