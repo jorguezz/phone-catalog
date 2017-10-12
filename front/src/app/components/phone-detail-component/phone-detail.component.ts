@@ -5,15 +5,13 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './phone-detail.component.html',
   styleUrls: ['./phone-detail.component.scss']
 })
-export class PhoneDetailComponent implements OnInit {
+export class PhoneDetailComponent {
 
-  @Input() private phone: Object;
+  @Input() phone: object;
 
   constructor () {}
 
-  ngOnInit() {}
-
-  private addToCart(ev, phone) {
+  addToCart(ev, phone) {
     console.log(phone);
   }
 }
